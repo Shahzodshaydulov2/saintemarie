@@ -1,128 +1,163 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Chivo&display=swap');
-.exp, .col, .banner, .vanneries {
-  font-style: normal;
-  font-weight: 400;
-  font-family: 'Chivo', sans-serif;
-}
-body {
-  
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-header {
-  padding: 25px;
+.container {
+  max-width: 920px;
+  margin: 0 auto;
 }
-.nav a{
+a {
   text-decoration: none;
-  text-transform: uppercase;
-  color: #AAAAAA;
-  padding: 10px 10px;
-  font-size: 14px;
-  line-height: 14px;
-  font-family: "Century Gothic", sans-serif;
 }
+
+/* header */
+header {
+  padding-top: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a {
+  color: #aaa;
+  font-size: 14px;
+  font-family: sans-serif;
+  padding-right: 25px;
+}
+
+/* banner */
 .banner {
-  height: 613px;
+  margin-top: 100px;
   background-image: url("../imgs/banner.png");
   color: #fff;
-  background-size: cover;
+  height: 613px;
   text-align: center;
-  background-repeat: no-repeat;
-  padding-top: 260px;
+  padding-top: 250px;
+  font-family: "Chivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
-.banner h2, .vanneries h2{
+.banner h2, .banner2 h2 {
   font-size: 48px;
   line-height: 58px;
 }
-.banner p, .vanneries p {
-  text-transform: uppercase;
+.banner p, .banner2 p {
   font-size: 20px;
-  letter-spacing: 0.2;
   line-height: 31px;
+  letter-spacing: 0.206;
+  text-transform: uppercase;
 }
-
-/* vanneries */
-.vanneries {
+.banner2 {
   background-image: url("../imgs/banner2.png");
   height: 528px;
-  text-align: center;
-  padding-top: 224px;
+  font-family: "Chivo", sans-serif;
   color: #fff;
+  text-align: center;
+  padding-top: 215px;
+  margin-top: 30px;
 }
 
-/* Collections */ 
-.collections > .row{
+
+/* collections */
+.collections {
+  display: flex;
+  justify-content: space-between;
   height: 442px;
+  margin-top: 30px;
 }
-.box {
-  height: 100%;
+.collection {
+  width: 48%;
   text-align: center;
   color: #fff;
-  padding-top: 188px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  font-family: "Chivo", sans-serif;
+  padding-top: 180px;
 }
-.box1 {
+.sand {
   background-image: url("../imgs/collection2.png");
-  margin-right: 20px;
+  background-size: cover;
 }
-.box2 {
-  background-image: url("../imgs/collection.png");
-}
-.col h3 {
+.sand h3, .chanvre h3 {
+  font-style: normal;
+  font-weight: 400;
   font-size: 23px;
   line-height: 28px;
 }
-.col p {
+.sand p, .chanvre p {
+  font-family: "Chivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 20px;
-  letter-spacing: 0.13;
 }
-
-/* Correspondances1 */
-
-.exp {
-  background-repeat: no-repeat;
+.chanvre {
+  background-image: url("../imgs/collection.png");
   background-size: cover;
-  color: #fff;
-  text-align: center;
+}
+
+
+/* features */
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
   height: 282px;
-  padding-top: 120px;
 }
-.exp1 {
+.feature {
+  width: 32%;
+  text-align: center;
+  color: #fff;
+  font-family: "Chivo", sans-serif;
+  padding-top: 115px;
+}
+.box1 {
   background-image: url("../imgs/exposition.png");
+  background-size: cover;
 }
-.exp2 {
+.box2 {
   background-image: url("../imgs/exposition2.png");
+  background-size: cover;
 }
-.exp3 {
-  background-image: url("../imgs/exposition3.png");
+.box3 {
+  background-image: url("../imgs/exposition3.png")
 }
-.exp h4 {
+.feature h4 {
   font-size: 15px;
   line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
 }
-.exp p {
+.feature p {
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.13;
-  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
 }
+
 
 /* footer */
 footer {
+  margin-top: 100px;
   text-align: center;
 }
+.black-square__box {
+  display: flex;
+  justify-content: center;
+}
 .black-square {
-  background-color: #000;
   width: 36px;
   height: 36px;
-  margin: 10px;
-  display: inline-block;
+  background-color: #000;
+  margin: 5px;
 }
-
-footer p {
-  color: #333;
+.copy-right p{
+  font-family: "Abel", sans-serif;
   font-size: 18px;
   line-height: 28px;
-  font-family: "Abel", sans-serif;
+  color: #333;
+  font-style: normal;
+  font-weight: 400;
 }
